@@ -5,3 +5,11 @@
 # Instalation
 
 `npm i form_validator_ak`
+
+Then...
+
+```
+const validator=require('form_validator_ak')
+console.log(validator.isValidEmail('xyz@some.com'))
+console.log(validator.isIndianMobileNumber('give a valid mobile number'))
+```
