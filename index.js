@@ -7,7 +7,7 @@ class Form_validator{
           return false;
       }
   }
-   isValidPassword=(password,numberofuppercaseletters=1,numberoflowercaseletters=1,numberofdigits=1,numberofspecialcharacters=1,maxchar=8)=>{
+   isValidPassword=( password='',numberofuppercaseletters=1,numberoflowercaseletters=1,numberofdigits=1,numberofspecialcharacters=1,maxchar=8)=>{
       if(maxchar<0){
           return false
       }if(numberoflowercaseletters+numberofspecialcharacters+numberofuppercaseletters+numberofdigits>maxchar){
@@ -26,7 +26,7 @@ class Form_validator{
          
   }
   
-   isValidEmail=(email)=>{
+   isValidEmail=(email='')=>{
       const emailregx=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 if(email.match(emailregx)){
                     return true;
@@ -34,7 +34,7 @@ class Form_validator{
                     return false;
                 }
   }
-    isAlphaNumneric=(alphanumericstr)=>{
+    isAlphaNumneric=(alphanumericstr='')=>{
          const alphnumericregx=/^[a-zA-Z0-9]*$/
          if(alphanumericstr.match(alphnumericregx)){
              return true;

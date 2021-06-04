@@ -1,7 +1,7 @@
 {
-  "name": "form_validator",
+  "name": "form_validator_ak",
   "version": "1.0.0",
-  "description": "A javascript module which consists of functions by importing the module we can use functions which are used to validate user inputs such as phone number, valid mail ID and soon..!",
+  "description": "A javascript module which consists of functions by importing the module we can use functions which are used to validate user inputs such as phone number, valid mail ID and so on..!",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
